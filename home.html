@@ -26,12 +26,12 @@
                  <div class="divider"></div>
                  <!-- user action button  -->
                  <div>
-                    <button class="btn btn-lg">Add Mony</button>
-                    <button class="btn btn-lg">Cash out</button>
+                    <button id="btn-show-add-mony" class="btn btn-lg">Add Mony</button>
+                    <button id="btn-show-cash-out" class="btn btn-lg">Cash out</button>
                  </div>
                  <div class="divider"></div>
                  <!-- Add Mony form start -->
-                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                  <div id="add-mony-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -51,10 +51,34 @@
                       </div>
                     </form>
                   </div>
+                  <!-- cash out form start  -->
+                  <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Amount</span>
+                        </label>
+                        <input id="input-cash-out" type="text" placeholder="Cash Out Amount" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Pin</span>
+                        </label>
+                        <input id="input-cash-out-pin-number" type="password" placeholder="Pin" class="input input-bordered" autocomplete="off" required />
+                        
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="btn-cash-out" class="btn btn-primary">Cash out</button>
+                      </div>
+                    </form>
+                  </div>
               </div>
             </div>
           </div>
     </main>
-    <script src="js/home.js"></script>
+    <!-- <script src="js/home.js"></script> -->
+     <script src="js/addMony.js"></script>
+     <script src="js/cashOut.js"></script>
+     <script src="js/features.js"></script>
 </body>
 </html>
